@@ -1,88 +1,141 @@
 body {
-    background-color: #1b1b1b;
+    background-color: white;/* #1b1b1b; */
     font-family: "Open Sans", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
-    font-weight: 200;
-    color: white;
+    color: black;
+    position: relative;
 }
 
 header {
-    background-color: #252526;
-    height: 75px;
-    border-bottom: solid black 1px;
-    margin: auto;
-    text-transform: lowercase;
-}
-
-header > ul {
-    list-style: none;
-    display: table;
-    margin: auto;
-    height: 100%;
-    table-layout: fixed;
-    width: 750px;
-    border-spacing: 3px 0px;
-    padding: 0px;
-}
-
-@media (min-width: 750px) {
-    .text {
-        visibility: visible;
-    }
-
-    header > ul {
-        width: 750px;
-    }
-}
-
-@media (max-width: 750px) {
-    .text {
-        display: none;
-    }
-
-    header > ul {
-        width: auto;
-    }
-}
-
-header > ul > a {
-    color: inherit;
-    text-decoration: none;
-    display: table-cell;
-    padding: 0px 25px;
-    height: 100%;
-    vertical-align: middle;
-    text-align: center;
-    border-bottom: solid #0075C4 5px;
-}
-
-header > ul > a:hover {
-    color: #72C7FF;
-    border-bottom: solid #72C7FF 5px;
-}
-
-#itron {
-    width: 100%;
     position: relative;
-    overflow: auto;
+    z-index: 3;
+}
+
+header #black_block {
+    background-color: black; /* #252526; */
+    opacity: .5;
+    height: 75px;
+    width: 100%;
+    /* border-bottom: solid black 1px; */
+    position: fixed;
+    top: 0;
+    filter: blur(2px);
+    -ms-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -o-filter: blur(2px);
+}
+
+header #home_icon {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 13px;
+    left: 50%;
+    background-color: #999999;
+    border-radius: 15px;
+    filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -o-filter: blur(0px);
+}
+
+#home_icon > img {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px 0 0 -12px;
+    filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -o-filter: blur(0px);
+}
+
+#bamboo {
+    position: absolute;
+    z-index: 0;
+}
+
+#bamboo img {
+    width: 100%;
+    height: 500px;
+}
+
+#bamboo-black {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: .25;
+}
+
+#intro {
+    position: relative;
+    top: 75px;
+    z-index: 1;
+    width: 800px;
+    margin: auto;
 }
 
 #prof-image {
-    width: 50%;
+    position: relative;
     float: left;
+    padding: 50px;
 }
 
 #prof-image img {
+    height: 325px;
+}
+
+#prof-text-outer-box {
+    position: relative;
+    height: 425px;
+    width: 369px;
+    float: right;
+}
+
+#prof-text-blur {
     width: 100%;
-    height: auto;
+    height: 126px;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    opacity: .75;
+}
+
+#prof-text-inner-box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px black;
 }
 
 #prof-text {
-    width: 50%;
-    height: 100%;
-    float: left;
+    display: relative;
+    color: white;
+    text-shadow: 2px 2px 5px black;
     text-align: center;
 }
 
-#text-inner {
-    display: block;
+#name {
+    font-family: "Helvetica Neue", "Open Sans", "Segoe UI", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#whatiam {
+    font-size: 20px;
+    font-weight: 700;
 }
