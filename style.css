@@ -22,8 +22,8 @@ body {
     background: linear-gradient(to bottom right, #0003CC, #0000FF, #6100FF);
     /* background: linear-gradient(to bottom right, #3700D9, #6700D9); */
     color: white;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
-    font-size: 4vh;
+    font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 3.5vh;
     font-weight: 100;
 }
 
@@ -67,8 +67,8 @@ body {
     margin: 0 20px;
     padding: 20px;
     text-decoration: none;
-    -webkit-transition: background-color .5s, color .5s;
-    transition: background-color .5s, color .5s;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
     width: 100px;
 }
 
